@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "hate speech filter",
+  "version": "1.0",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+    
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png"
+    }
+  },
+  "host_permissions": ["https://web-production-5070.up.railway.app/"]
+}
