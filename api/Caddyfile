@@ -1,0 +1,3 @@
+farmai.kro.kr {
+    reverse_proxy localhost:8000
+}
